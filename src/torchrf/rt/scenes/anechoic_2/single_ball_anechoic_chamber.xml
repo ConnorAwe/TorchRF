@@ -1,0 +1,113 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+<!--	<bsdf type="twosided" id="default-bsdf" name="default-bsdf">-->
+<!--		<bsdf type="diffuse" name="bsdf"/>-->
+<!--			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>-->
+<!--		</bsdf>-->
+<!--	<bsdf type="twosided" id="mat-Material.001" name="mat-Material.001">-->
+<!--		<bsdf type="principled" name="bsdf">-->
+<!--			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>-->
+<!--			<float name="spec_tint" value="0.000000"/>-->
+<!--			<float name="spec_trans" value="0.000000"/>-->
+<!--			<float name="metallic" value="0.000000"/>-->
+<!--			<float name="anisotropic" value="0.000000"/>-->
+<!--			<float name="roughness" value="0.250000"/>-->
+<!--			<float name="sheen" value="0.000000"/>-->
+<!--			<float name="sheen_tint" value="0.500000"/>-->
+<!--			<float name="clearcoat" value="0.000000"/>-->
+<!--			<float name="clearcoat_gloss" value="0.000900"/>-->
+<!--			<float name="specular" value="0.500000"/>-->
+<!--		</bsdf>-->
+<!--	</bsdf>-->
+<!--	<bsdf type="twosided" id="mat-Material.006" name="mat-Material.006">-->
+<!--		<bsdf type="principled" name="bsdf">-->
+<!--			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>-->
+<!--			<float name="spec_tint" value="0.000000"/>-->
+<!--			<float name="spec_trans" value="0.000000"/>-->
+<!--			<float name="metallic" value="0.000000"/>-->
+<!--			<float name="anisotropic" value="0.000000"/>-->
+<!--			<float name="roughness" value="0.250000"/>-->
+<!--			<float name="sheen" value="0.000000"/>-->
+<!--			<float name="sheen_tint" value="0.500000"/>-->
+<!--			<float name="clearcoat" value="0.000000"/>-->
+<!--			<float name="clearcoat_gloss" value="0.000900"/>-->
+<!--			<float name="specular" value="0.500000"/>-->
+<!--		</bsdf>-->
+<!--	</bsdf>-->
+
+	<bsdf type="twosided" id="mat-itu_metal">
+		<bsdf type="diffuse">
+			<rgb value="0.219526 0.219526 0.254152" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+		<bsdf type="twosided" id="mat-itu_wood">
+		<bsdf type="diffuse">
+			<rgb value="0.266356 0.109462 0.059511" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+<!--	<shape type="ply" id="elm__2">-->
+<!--		<string name="filename" value="meshes/Cube.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__4">-->
+<!--		<string name="filename" value="meshes/Cube_001.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__6">-->
+<!--		<string name="filename" value="meshes/Cube_003.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__7">-->
+<!--		<string name="filename" value="meshes/Cube_004.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__8">-->
+<!--		<string name="filename" value="meshes/Cube_002.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__9">-->
+<!--		<string name="filename" value="meshes/Cube_005.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+<!--	<shape type="ply" id="elm__10">-->
+<!--		<string name="filename" value="meshes/Cube_006.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+	<shape type="ply" id="elm__11">
+		<string name="filename" value="meshes/Sphere.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+<!--	<shape type="ply" id="elm__12">-->
+<!--		<string name="filename" value="meshes/Cube_007.ply"/>-->
+<!--		<boolean name="face_normals" value="true"/>-->
+<!--		<ref id="mat-itu_wood" name="bsdf"/>-->
+<!--	</shape>-->
+
+<!-- Volumes -->
+
+</scene>
