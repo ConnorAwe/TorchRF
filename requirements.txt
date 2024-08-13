@@ -1,0 +1,11 @@
+torch
+tqdm
+numpy
+scipy
+matplotlib
+mitsuba
+drjit
+importlib_resources
+ipywidgets
+pythreejs
+jupyter
